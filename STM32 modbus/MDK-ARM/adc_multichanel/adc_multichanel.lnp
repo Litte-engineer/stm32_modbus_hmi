@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"adc_multichanel\startup_stm32f103xb.o"
+"adc_multichanel\modbus_crc.o"
+"adc_multichanel\main.o"
+"adc_multichanel\stm32f1xx_it.o"
+"adc_multichanel\stm32f1xx_hal_msp.o"
+"adc_multichanel\stm32f1xx_hal_gpio_ex.o"
+"adc_multichanel\stm32f1xx_hal_adc.o"
+"adc_multichanel\stm32f1xx_hal_adc_ex.o"
+"adc_multichanel\stm32f1xx_hal.o"
+"adc_multichanel\stm32f1xx_hal_rcc.o"
+"adc_multichanel\stm32f1xx_hal_rcc_ex.o"
+"adc_multichanel\stm32f1xx_hal_gpio.o"
+"adc_multichanel\stm32f1xx_hal_dma.o"
+"adc_multichanel\stm32f1xx_hal_cortex.o"
+"adc_multichanel\stm32f1xx_hal_pwr.o"
+"adc_multichanel\stm32f1xx_hal_flash.o"
+"adc_multichanel\stm32f1xx_hal_flash_ex.o"
+"adc_multichanel\stm32f1xx_hal_exti.o"
+"adc_multichanel\stm32f1xx_hal_tim.o"
+"adc_multichanel\stm32f1xx_hal_tim_ex.o"
+"adc_multichanel\stm32f1xx_hal_uart.o"
+"adc_multichanel\system_stm32f1xx.o"
+--strict --scatter "adc_multichanel\adc_multichanel.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "adc_multichanel.map" -o adc_multichanel\adc_multichanel.axf
